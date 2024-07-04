@@ -78,24 +78,33 @@
 
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
-    # FIXME: Replace with your username
     rafaribe = {
-      # TODO: You can set an initial password for your user.
       # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
       # Be sure to change it (using passwd) after rebooting!
-      initialPassword = "password";
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
-        # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJSVqNSVldmZRPKf8lHetd5cVP6Yv4jvetdie94oNL+Y rafael.ntw@gmail.com"
       ];
-      # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["wheel","sudo"];
+      extraGroups = ["wheel" "sudo" "home-manager"];
     };
   };
 
-# To install it globally
-environment.systemPackages =
-  [ inputs.home-manager.packages.${pkgs.system}.default ];
+
+  environment = {
+    # This will additionally add your inputs to the system's legacy channels
+    # Making legacy nix commands consistent as well, awesome!
+    etc = lib.mapAttrs' (name: value: {
+      name = "nix/path/${name}";
+      value.source = value.flake;
+    }) config.nix.registry;
+
+    systemPackages = with pkgs; [ git neovim nix-search-cli bitwarden-desktop vscode ];
+
+    variables = {
+      VDPAU_DRIVER = "radeonsi";
+      LIBVA_DRIVER_NAME = "radeonsi";
+    };
+  };
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.
@@ -106,7 +115,7 @@ environment.systemPackages =
       PermitRootLogin = "no";
       # Opinionated: use keys only.
       # Remove if you want to SSH using passwords
-      PasswordAuthentication = yes;
+      #PasswordAuthentication = "yes";
     };
   };
 
