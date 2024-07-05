@@ -46,12 +46,8 @@
     overlays = import ./overlays {inherit inputs;};
     # Reusable nixos modules you might want to export
     # These are usually stuff you would upstream into nixpkgs
-    nixosModules = import ./modules/nixos;
-    # Reusable home-manager modules you might want to export
-    # These are usually stuff you would upstream into home-manager
-    homeManagerModules = import ./modules/home-manager;
-
-    # NixOS configuration entrypoint
+    nixosModules = import ./modules;
+  #  homeManagerModules = import ./modules/home-manager;    # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       nixos-desktop = nixpkgs.lib.nixosSystem {

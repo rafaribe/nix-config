@@ -98,7 +98,7 @@
       value.source = value.flake;
     }) config.nix.registry;
 
-    systemPackages = with pkgs; [ git neovim nix-search-cli bitwarden-desktop vscode ];
+    systemPackages = with pkgs; [ git neovim nix-search-cli ];
 
     variables = {
       VDPAU_DRIVER = "radeonsi";

@@ -49,11 +49,14 @@
     username = "rafaribe";
     homeDirectory = "/home/rafaribe";
     packages = with pkgs; [
-      brave
-      discord
+      unstable.brave
       vlc
       steam
       spotify
+      vesktop
+      unstable.ferdium
+      unstable.bitwarden-desktop
+      unstable.vscode
     ];
   };
 
