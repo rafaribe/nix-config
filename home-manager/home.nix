@@ -64,9 +64,9 @@
   programs.git.enable = true;
 
   # NixOS system-wide home-manager configuration
-  home-manager.sharedModules = [
-    inputs.sops-nix.homeManagerModules.sops
-  ];
+ # home-manager.sharedModules = [
+   # inputs.sops-nix.homeManagerModules.sops
+ # ];
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
