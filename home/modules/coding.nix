@@ -14,4 +14,7 @@
       alias tt=~testQuick
     '';
   };
+  home.packages = with pkgs; [
+    sassc
+  ];
 }

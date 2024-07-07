@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   services.xserver = {
-    xkb = { 
+    xkb = {
       layout = "pt";
       variant = "nodeadkeys";
     };

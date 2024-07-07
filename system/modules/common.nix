@@ -15,7 +15,7 @@
     ./python.nix
     ./shell.nix
     ./sound.nix
-    ./stylix.nix
+    #  ./stylix.nix
     ./users.nix
   ];
 
