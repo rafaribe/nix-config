@@ -11,10 +11,7 @@
     lsof
     bind
     wine
-    (lutris.override {
-      extraLibraries =  pkgs: [
-        # List library dependencies here
-      ];
+    lutris
   ];
 
   # enable zsh completion for system packages
