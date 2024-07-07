@@ -16,12 +16,4 @@
     LC_TELEPHONE = "pt_PT.UTF-8";
     LC_TIME = "pt_PT.UTF-8";
   };
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "pt";
-    xkbVariant = "nodeadkeys";
-  };
-
-  # Configure console keymap
-  console.keyMap = "pt-latin1";
 }

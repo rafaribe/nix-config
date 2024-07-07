@@ -1,5 +1,11 @@
 {pkgs, ...}: {
-  console.keyMap = "colemak";
+  services.xserver = {
+    xkb = { 
+      layout = "pt";
+      variant = "nodeadkeys";
+    };
+  };
 
-  environment.systemPackages = with pkgs; [keyd wev];
+  # Configure console keymap
+  console.keyMap = "pt-latin1";
 }
