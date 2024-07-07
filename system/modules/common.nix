@@ -9,15 +9,12 @@
     ./linux.nix
     ./locale.nix
     ./network.nix
-    # ./nginx.nix
     ./nix.nix
     ./packages.nix
     ./python.nix
     ./shell.nix
     ./sound.nix
-    #  ./stylix.nix
     ./users.nix
-    #./gaming.nix
   ];
 
   services.dbus.enable = true;

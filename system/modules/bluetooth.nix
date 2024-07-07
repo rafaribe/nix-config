@@ -1,7 +1,14 @@
 {...}: let
-  enable = false; # save energy until we need it
+  enable = true; # save energy until we need it
 in {
-  hardware.bluetooth.enable = enable;
-  hardware.bluetooth.powerOnBoot = false;
+  hardware.bluetooth = {
+    enable = enable;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
   services.blueman.enable = enable;
 }

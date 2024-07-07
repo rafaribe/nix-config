@@ -3,8 +3,7 @@
   config,
   osConfig,
   ...
-}:
-{
+}: {
   programs.atuin = {
     enable = true;
 
@@ -13,7 +12,7 @@
     enableZshIntegration = config.programs.zsh.enable;
     enableNushellIntegration = config.programs.nushell.enable;
 
-    flags = [ "--disable-up-arrow" ];
+    flags = ["--disable-up-arrow"];
     settings = {
       dialect = "pt";
       show_preview = true;
