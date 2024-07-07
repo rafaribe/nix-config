@@ -10,6 +10,8 @@
     psmisc # fuser
     lsof
     bind
+    wine
+    bottles
   ];
 
   # enable zsh completion for system packages

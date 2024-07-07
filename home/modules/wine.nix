@@ -4,6 +4,6 @@
       wineRelease = "staging";
       mingwSupport = true;
     })
-    winetricks
+    winetricks          
   ];
 }
