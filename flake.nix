@@ -35,6 +35,7 @@
           {
             home-manager.users.rafaribe = import ./home/amaterasu;
             home-manager.extraSpecialArgs = specialArgs;
+            home-manager.backupFileExtension = "backup";
           }
           ./system/amaterasu
         ];

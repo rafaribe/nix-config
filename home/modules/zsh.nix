@@ -144,7 +144,6 @@
       "x" = "dtrx";
       "reload" = ". ~/.zshrc";
       "meteo" = "curl -4 http://wttr.in/44600";
-      "lipass" = "PASSWORD_STORE_DIR=~/lichess-sysadmin/pass pass";
       # Stuff
       "st" = "_ systemctl-tui";
     };

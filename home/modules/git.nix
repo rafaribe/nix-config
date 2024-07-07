@@ -1,8 +1,9 @@
 {lib, ...}: {
   programs.git = {
     enable = true;
-    userName = "rafaribeault Duplessis";
-    userEmail = "t@lichess.org";
+    userName = "Rafael Ribeiro";
+    userEmail = "rafael.ntw" + "@" + "gmail" + "." + "com"; # obsfuscate email to prevent webscrapper spam
+
 
     extraConfig = {
       core = {
@@ -20,7 +21,7 @@
       pull.rebase = false;
       rebase.autoStash = true;
       branch.autosetupmerge = true;
-      init.defaultBranch = "master";
+      init.defaultBranch = "main";
       rerere.enabled = true;
       color.ui = true;
       blame.date = "relative";
