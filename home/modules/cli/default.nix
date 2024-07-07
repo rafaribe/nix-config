@@ -1,7 +1,7 @@
 {
   imports = [
     ./cli.nix
-    # ./atuin.nix
+    ./atuin.nix
     # ./bat.nix
     # ./bellado.nix
     # ./direnv.nix

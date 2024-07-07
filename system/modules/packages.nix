@@ -6,7 +6,6 @@
     ffmpeg
     btop
     firefox
-    google-chrome
     vscode
     brave
     vesktop

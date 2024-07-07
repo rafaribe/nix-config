@@ -14,7 +14,7 @@
         options = {"navigate" = true;};
       };
       diff.tool = "meld";
-      web.browser = "google-chrome-stable";
+      web.browser = "brave";
       push.default = "tracking";
       push.autoSetupRemote = true;
       pull.rebase = false;
