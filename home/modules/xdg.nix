@@ -1,5 +1,5 @@
 {...}: {
-  for electron apps
+ # for electron apps
   home.sessionVariables.DEFAULT_BROWSER = "brave-browser.desktop";
 
   xdg.mimeApps = {
