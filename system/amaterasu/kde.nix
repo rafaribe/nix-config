@@ -18,4 +18,5 @@
       enable = true;
     };
   };
+  services.samba.enable = true;
 }
