@@ -12,6 +12,7 @@
     inputs.nixos-hardware.nixosModules.common-gpu-amd
     ../modules/common.nix
     ../modules/bluetooth.nix
+    #  ../modules/gaming.nix
   ];
 
   # Open ports in the firewall.

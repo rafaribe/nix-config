@@ -17,6 +17,7 @@
     ./sound.nix
     #  ./stylix.nix
     ./users.nix
+    #./gaming.nix
   ];
 
   services.dbus.enable = true;

@@ -2,13 +2,12 @@
   imports = [
     ./modules/cli.nix
     ./modules/coding.nix
-    ./modules/gaming.nix
     ./modules/git.nix
     ./modules/kitty.nix
     ./modules/lazygit.nix
     ./modules/neovim.nix
+    ./modules/productivity.nix
     ./modules/ssh.nix
-    ./modules/steam.nix
     ./modules/xdg.nix
     ./modules/zsh.nix
   ];
