@@ -5,7 +5,7 @@
   xdg.mimeApps = {
     enable = true;
     defaultApplications = let
-      browser = "google-chrome.desktop";
+      browser = "brave-browser.desktop";
     in {
       "text/html" = browser;
       "x-scheme-handler/http" = browser;
