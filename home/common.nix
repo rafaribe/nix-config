@@ -1,6 +1,6 @@
 {config, ...}: {
   imports = [
-    ./modules/cli.nix
+    ./modules/cli
     ./modules/coding.nix
     ./modules/git.nix
     ./modules/kitty.nix
