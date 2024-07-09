@@ -2,7 +2,7 @@
   imports = [
     ./cli.nix
     ./atuin.nix
-   # ./direnv.nix
+    ./direnv.nix
     # ./bat.nix
     # ./bellado.nix
     # ./direnv.nix
