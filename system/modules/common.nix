@@ -13,6 +13,7 @@
     ./packages.nix
     ./python.nix
     ./shell.nix
+    ./ssh.nix
     ./sound.nix
     ./users.nix
   ];
