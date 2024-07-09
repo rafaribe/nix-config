@@ -36,4 +36,5 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/home/rafaribe/nix-config";
   };
+  services.envfs.enable = true;
 }
