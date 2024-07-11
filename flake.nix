@@ -13,7 +13,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    lan-mouse.url = "github:feschber/lan-mouse";
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.90.0.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -21,6 +24,7 @@
     nixpkgs,
     nixos-hardware,
     home-manager,
+    lix-module,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -37,6 +41,7 @@
             home-manager.extraSpecialArgs = specialArgs;
             home-manager.backupFileExtension = "backup";
           }
+          lix-module.nixosModules.default
           ./system/amaterasu
         ];
       };
