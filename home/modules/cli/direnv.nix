@@ -4,7 +4,8 @@
   ...
 }:
 {
-    # enable direnv integration
+    programs.direnv.enable = true;
+    
     direnv = {
       enable = true;
       silent = true;
