@@ -9,7 +9,7 @@
     vscode
     brave
     vesktop
-    neofetch
+   # neofetch
     spotify
     playerctl
     ferdium
@@ -18,7 +18,7 @@
     libnotify
     gping # ping with a graph
     trippy # network diagnostic https://github.com/fujiapple852/trippy
-    thefuck
+  #  thefuck
     xpad
   ];
 }
