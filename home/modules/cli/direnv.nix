@@ -4,8 +4,8 @@
   ...
 }:
 {
-    programs.direnv.enable = true;
-    
+    programs = {
+
     direnv = {
       enable = true;
       silent = true;
@@ -16,6 +16,7 @@
       };
 
       # enable loading direnv in nix-shell nix shell or nix develop
-      loadInNixShell = true;
+     # loadInNixShell = true;
     };
+  };
 }
