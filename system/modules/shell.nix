@@ -26,7 +26,6 @@
     zoxide
     fira-code
     pass
-    gnupg
     pinentry-tty
     bat-extras.batman
     bat-extras.batwatch
