@@ -2,6 +2,7 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
+    ./bluetooth.nix
     ./boot.nix
     ./coding.nix
     ./fonts.nix
@@ -9,6 +10,7 @@
     ./linux.nix
     ./locale.nix
     ./network.nix
+    ./nfs.nix
     ./nix.nix
     ./packages.nix
     ./python.nix
@@ -17,5 +19,5 @@
     ./users.nix
   ];
 
-  services.dbus.enable = true;
+  services.dbus.enable = false; 
 }
