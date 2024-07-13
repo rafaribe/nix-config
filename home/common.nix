@@ -2,14 +2,7 @@
   imports = [
     ./modules/cli
     ./modules/gui
-    ./modules/coding.nix
-    ./modules/git.nix
-    ./modules/kitty.nix
-    ./modules/lazygit.nix
-    ./modules/neovim.nix
-    ./modules/ssh.nix
-    ./modules/xdg.nix
-    ./modules/zsh.nix
+    ./modules/utils
   ];
 
   home = rec {

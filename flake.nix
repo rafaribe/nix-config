@@ -39,7 +39,7 @@
           {
             home-manager.users.rafaribe = import ./home/amaterasu;
             home-manager.extraSpecialArgs = specialArgs;
-            home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "backupx";
           }
           lix-module.nixosModules.default
           ./system/amaterasu
