@@ -5,6 +5,5 @@
   home.packages = with pkgs; [
     sassc
     zed-editor
-  
   ];
 }

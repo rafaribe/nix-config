@@ -5,7 +5,7 @@
 }: {
   home.packages = with pkgs; [
     obsidian
-    bitwarden-desktop              
+    bitwarden-desktop
     bitwarden-cli
   ];
 }

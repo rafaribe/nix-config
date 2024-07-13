@@ -19,5 +19,5 @@
     ./users.nix
   ];
 
-  services.dbus.enable = false; 
+  services.dbus.enable = true;
 }

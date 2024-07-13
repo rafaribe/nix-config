@@ -4,7 +4,6 @@
     userName = "Rafael Ribeiro";
     userEmail = "rafael.ntw" + "@" + "gmail" + "." + "com"; # obsfuscate email to prevent webscrapper spam
 
-
     extraConfig = {
       core = {
         editor = "nvim";

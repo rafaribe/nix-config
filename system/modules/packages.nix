@@ -9,7 +9,7 @@
     vscode
     brave
     vesktop
-   # neofetch
+    # neofetch
     spotify
     playerctl
     ferdium
