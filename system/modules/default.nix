@@ -12,6 +12,7 @@
     ./network.nix
     ./nfs.nix
     ./nix.nix
+    ./nix-path.nix
     ./packages.nix
     ./python.nix
     ./shell.nix
