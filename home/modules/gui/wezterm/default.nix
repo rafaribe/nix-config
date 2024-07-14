@@ -4,7 +4,9 @@
   inputs',
   osConfig,
   ...
-}: {
+}: let
+  inherit (osConfig.garden) environment system;
+in {
   programs.wezterm = {
     enable = true;
     package = inputs'.beapkgs.packages.wezterm;

@@ -43,6 +43,7 @@
           }
           lix-module.nixosModules.default
           ./system/amaterasu
+          ./system/base
         ];
       };
     };

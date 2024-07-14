@@ -5,6 +5,6 @@
     ./utils.nix
     ./coding.nix
     ./kitty.nix
-    ./wezterm
+   # ./wezterm
   ];
 }
