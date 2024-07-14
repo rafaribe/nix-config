@@ -1,4 +1,9 @@
 {
+  pkgs,
+  config,
+  ...
+}:
+{
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.enable = true;
@@ -19,4 +24,10 @@
     };
   };
   services.samba.enable = true;
+
+  system = {
+    extraSystemBuilderCmds = ''
+      ln -sv ${pkgs.path} $out/nixpkgs
+    '';
+  };
 }
