@@ -9,18 +9,11 @@
 
   nix = let
     flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
-    nixPath = "/etc/nixPath";
   in {
     settings = {
       # Enable flakes and new 'nix' command
       experimental-features = "nix-command flakes";
-      # Opinionated: disable global registry
-      #flake-registry = "";
-      # Workaround for https://github.com/NixOS/nix/issues/9574
     };
-    # Opinionated: disable channels
-    channel.enable = false;
-    nixPath = ["nixpkgs=${nixPath}"];
   };
 
   home-manager = {
