@@ -3,20 +3,21 @@
   pkgs,
   config,
   ...
-}:
-let
-  inherit (lib)
+}: let
+  inherit
+    (lib)
     ldTernary
     mkEnableOption
     mkOption
     types
     ;
-in
-{
+in {
   options.garden.environment = {
-    useHomeManager = mkEnableOption "Whether to use home-manager or not" // {
-      default = true;
-    };
+    useHomeManager =
+      mkEnableOption "Whether to use home-manager or not"
+      // {
+        default = true;
+      };
 
     flakePath = mkOption {
       type = types.str;

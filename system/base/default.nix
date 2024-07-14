@@ -1,5 +1,5 @@
 {
   imports = [
-  ./environment.nix
+    ./environment.nix
   ];
 }
