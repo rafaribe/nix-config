@@ -16,8 +16,7 @@
   crane
   clusterctl
   talosctl
-  kubeadm
-  etcdctlf
+  etcd # Interested to only get etcdctl
   fluxcd  
   ];
 }
