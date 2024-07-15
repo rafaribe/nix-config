@@ -8,11 +8,9 @@
     firefox
     vscode
     brave
-    vesktop
     # neofetch
     spotify
     playerctl
-    ferdium
     gimp
     feh
     libnotify

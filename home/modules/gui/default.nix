@@ -6,5 +6,6 @@
     ./coding.nix
     ./kitty.nix
     ./wezterm
+    ./chat.nix
   ];
 }
