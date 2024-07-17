@@ -18,5 +18,6 @@
   talosctl
   etcd # Interested to only get etcdctl
   fluxcd  
+  kubectl
   ];
 }
