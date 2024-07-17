@@ -7,5 +7,6 @@
     obsidian
     bitwarden-desktop
     bitwarden-cli
+    qalculate-gtk
   ];
 }
