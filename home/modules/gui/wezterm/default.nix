@@ -4,7 +4,7 @@
   inputs',
   osConfig,
   ...
-}:{
+}: {
   programs.wezterm = {
     enable = true;
   };

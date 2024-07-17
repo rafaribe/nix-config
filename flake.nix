@@ -17,8 +17,12 @@
     };
     # declarative theme management
     catppuccin.url = "github:catppuccin/nix";
+
+    # Run unpatched dynamic binaries on NixOS
     nix-ld = {
-      url = "github:Mic92/nix-ld";
+      type = "github";
+      owner = "Mic92";
+      repo = "nix-ld";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -47,7 +51,6 @@
             home-manager.backupFileExtension = "backupx";
           }
           lix-module.nixosModules.default
-          nix-ld.nixosModules.nix-ld
           ./system/amaterasu
           #  ./system/base
         ];

@@ -9,6 +9,5 @@
     ./kubernetes.nix
     ./lazygit.nix
     ./neovim.nix
-    
   ];
 }
