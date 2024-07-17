@@ -1,8 +1,7 @@
 
 {pkgs, ...}: {
   home.packages = with pkgs; [
-   podman
-   podman-tui 
-   podman-compose
+    lldb_18
+    llvm_18
   ];
 }
