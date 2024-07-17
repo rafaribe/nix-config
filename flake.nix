@@ -17,6 +17,10 @@
     };
     # declarative theme management
     catppuccin.url = "github:catppuccin/nix";
+    nix-ld = {
+      url = "github:Mic92/nix-ld";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -25,6 +29,7 @@
     nixos-hardware,
     home-manager,
     lix-module,
+    nix-ld,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -42,6 +47,7 @@
             home-manager.backupFileExtension = "backupx";
           }
           lix-module.nixosModules.default
+          nix-ld.nixosModules.nix-ld
           ./system/amaterasu
           #  ./system/base
         ];
