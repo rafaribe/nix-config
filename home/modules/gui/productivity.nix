@@ -8,5 +8,6 @@
     bitwarden-desktop
     bitwarden-cli
     qalculate-gtk
+    librewolf
   ];
 }

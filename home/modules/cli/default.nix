@@ -1,7 +1,7 @@
 {
   imports = [
     ./atuin.nix
-    ./build-tools.nix
+   # ./build-tools.nix
     ./cli.nix
     ./containers.nix
     ./direnv.nix
