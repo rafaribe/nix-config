@@ -4,7 +4,4 @@
     tailscale
   ];
 
-  };
-
-  # required for root user
 }
