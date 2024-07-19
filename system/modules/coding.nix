@@ -16,6 +16,7 @@
     rustc
     rust-analyzer
     taplo # TOML language server
+    gitkraken
   ];
 
   programs.java.enable = true;

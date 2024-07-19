@@ -68,6 +68,10 @@
       mountPoint = "/mnt/storage-0/flakes";
       serverPath = "truenas.rafaribe.com:/mnt/storage-0/p" + "o" + "r" + "n";
     }
+    {
+      mountPoint = "/mnt/storage-0/filipa-disk";
+      serverPath = "truenas.rafaribe.com:/mnt/storage-0/filipa-disk";
+    }
   ];
 in {
   fileSystems = builtins.listToAttrs (map (mount: {

@@ -18,6 +18,7 @@
     ./shell.nix
     ./sound.nix
     ./users.nix
+    ./vpn.nix
   ];
 
   services.dbus.enable = true;
