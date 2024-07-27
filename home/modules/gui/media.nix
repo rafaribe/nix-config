@@ -7,5 +7,6 @@
     vlc
     nzbget
     sabnzbd
+    qbittorrent
   ];
 }

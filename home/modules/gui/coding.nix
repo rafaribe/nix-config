@@ -6,5 +6,6 @@
     sassc
     zed-editor
     thefuck
+    cmake
   ];
 }
