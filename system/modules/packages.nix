@@ -8,6 +8,7 @@
     firefox
     vscode
     brave
+    librewolf
     # neofetch
     spotify
     playerctl
@@ -21,5 +22,6 @@
     bottles
     kgpg
     hyfetch
+    google-chrome
   ];
 }

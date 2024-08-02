@@ -14,7 +14,7 @@
         options = {"navigate" = true;};
       };
       diff.tool = "meld";
-      web.browser = "brave";
+      web.browser = "librewolf";
       push.default = "tracking";
       push.autoSetupRemote = true;
       pull.rebase = false;
