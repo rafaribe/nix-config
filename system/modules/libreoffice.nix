@@ -1,4 +1,8 @@
-{...}: { environment.systemPackages = with pkgs; [
+{
+  pkgs,
+  config,
+  ...
+}: { environment.systemPackages = with pkgs; [
     libreoffice-qt
     hunspell
     hunspellDicts.uk_UA

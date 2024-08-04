@@ -9,6 +9,7 @@
     ./keyboard.nix
     ./linux.nix
     ./locale.nix
+    ./libreoffice.nix
     ./network.nix
     ./nfs.nix
     ./nix.nix
