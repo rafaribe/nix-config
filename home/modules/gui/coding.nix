@@ -7,6 +7,7 @@
     zed-editor
     thefuck
     cmake
+    kubectx
   ];
 }
     

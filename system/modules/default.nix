@@ -5,6 +5,7 @@
     ./bluetooth.nix
     ./boot.nix
     ./coding.nix
+    ./docker.nix
     ./fonts.nix
     ./keyboard.nix
     ./linux.nix
