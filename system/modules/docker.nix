@@ -3,7 +3,7 @@
     docker
     docker-slim
     docker-sbom
-    docker-buildlx
+    docker-buildx
     docker-compose
     nerdctl
     dive
@@ -11,7 +11,7 @@
     crane
   ];
 
-  virtualization = {
+  virtualisation = {
     docker = {
       enable = true;
     };
