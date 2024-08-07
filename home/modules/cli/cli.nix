@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
@@ -47,4 +51,10 @@
     };
   };
   home.sessionVariables.STARSHIP_CACHE = "${config.xdg.cacheHome}/starship";
+
+  home.packages = with pkgs; [
+    gh # Github CLI tool
+    smartgithg
+    github-desktop
+  ];
 }
