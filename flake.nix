@@ -35,12 +35,6 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # VSCode community extensions
-    # https://github.com/nix-community/nix-vscode-extensions
-    nix-vscode-extensions = {
-      url = "github:nix-community/nix-vscode-extensions";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     # NixVirt for qemu & libvirt
     # https://github.com/AshleyYakeley/NixVirt
     nixvirt-git = {
@@ -57,7 +51,6 @@
     lix-module,
     nix-ld,
     talhelper,
-    nix-vscode-extensions,
     ...
   } @ inputs: let
     inherit (self) outputs;
