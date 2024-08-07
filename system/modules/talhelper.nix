@@ -1,6 +1,6 @@
 {
   inputs,
-  pkgs ? import <nixpkgs> {},
-}: {;
+  pkgs
+}: {
   talhelper = inputs.talhelper.packages.${pkgs.system}.default;
 }

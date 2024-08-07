@@ -26,7 +26,7 @@
     };
     talhelper = {
       url = "github:budimanjojo/talhelper";
-      inputs.nixpkgs.follows = "nixpkgs";
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
