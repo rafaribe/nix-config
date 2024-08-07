@@ -2,7 +2,7 @@
   users.users = {
     rafaribe = {
       isNormalUser = true;
-      extraGroups = ["wheel" "video" "nginx"];
+      extraGroups = ["wheel" "video" "nginx" "docker"];
       homeMode = "750"; # for nginx to read assets
     };
   };

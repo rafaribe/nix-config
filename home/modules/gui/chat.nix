@@ -3,5 +3,7 @@
     telegram-desktop
     vesktop
     ferdium
+    slack
   ];
+
 }
