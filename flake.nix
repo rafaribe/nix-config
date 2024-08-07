@@ -5,7 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware";
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,6 +24,10 @@
       repo = "nix-ld";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    talhelper = {
+      url = "github:budimanjojo/talhelper";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -34,6 +37,7 @@
     home-manager,
     lix-module,
     nix-ld,
+    talhelper,
     ...
   } @ inputs: let
     inherit (self) outputs;

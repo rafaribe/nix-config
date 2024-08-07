@@ -19,6 +19,7 @@
     ./python.nix
     ./shell.nix
     ./sound.nix
+    ./talhelper.nix
     ./users.nix
     ./vpn.nix
   ];
