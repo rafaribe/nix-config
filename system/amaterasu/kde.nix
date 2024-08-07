@@ -9,11 +9,10 @@
   services.desktopManager.plasma6.enable = true;
 
   # Enable CUPS to print documents.
-services.printing = {
-  enable = true;
-  drivers = [ pkgs.brlaser];
-};
-
+  services.printing = {
+    enable = true;
+    drivers = [pkgs.brlaser];
+  };
 
   security.rtkit.enable = true;
 
@@ -33,8 +32,7 @@ services.printing = {
       ln -sv ${pkgs.path} $out/nixpkgs
     '';
   };
-    services.avahi.enable = true;
-    services.avahi.nssmdns = true;
-    services.avahi.openFirewall = true;
-
+  services.avahi.enable = true;
+  services.avahi.nssmdns = true;
+  services.avahi.openFirewall = true;
 }

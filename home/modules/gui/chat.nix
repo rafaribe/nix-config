@@ -5,5 +5,4 @@
     ferdium
     slack
   ];
-
 }

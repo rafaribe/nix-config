@@ -17,5 +17,5 @@
       storageDriver = "btrfs";
     };
   };
-  users.extraGroups.docker.members = [ "rafaribe" ];
+  users.extraGroups.docker.members = ["rafaribe"];
 }

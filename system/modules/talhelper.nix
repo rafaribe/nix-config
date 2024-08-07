@@ -1,6 +1,9 @@
 {
   inputs,
-  pkgs
+  pkgs,
+  ...
 }: {
-  talhelper = inputs.talhelper.packages.${pkgs.system}.default;
+  environment.systemPackages = with pkgs; [
+    inputs.talhelper.packages.${pkgs.system}.default
+  ];
 }
