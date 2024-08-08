@@ -14,6 +14,8 @@
     XDG_STATE_HOME = "$HOME/.local/state";
     XDG_BIN_HOME = "$HOME/.local/bin";
     PATH = ["${XDG_BIN_HOME}"];
+    TALOSCONFIG = "/home/rafaribe/code/rafaribe/home-ops/kubernetes/main/bootstrap/talos/clusterconfig/talosconfig";
+    SOPS_AGE_KEY_FILE = "/home/rafaribe/.config/sops/age/keys.txt";
   };
 
   environment.systemPackages = with pkgs; [

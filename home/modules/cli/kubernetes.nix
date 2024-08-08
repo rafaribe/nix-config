@@ -1,6 +1,12 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   home.sessionVariables = {
     SASS_PATH = "${pkgs.dart-sass}/bin/dart-sass";
+    TALOSCONFIG = "/home/rafaribe/code/rafaribe/home-ops/kubernetes/main/bootstrap/talos/clusterconfig/talosconfig";
   };
   home.packages = with pkgs; [
     k9s
@@ -19,4 +25,7 @@
     fluxcd
     kubectl
   ];
+  programs.zsh.shellAliases = lib.mkAfter {
+    "t" = "talosctl";
+  };
 }

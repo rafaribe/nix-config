@@ -56,5 +56,6 @@
     gh # Github CLI tool
     smartgithg
     github-desktop
+    xsel
   ];
 }

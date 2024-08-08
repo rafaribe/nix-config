@@ -26,10 +26,6 @@
       blame.date = "relative";
     };
 
-    aliases.l = let
-      format = "%Cred%h%Creset %Cblue%ad%Creset %Cgreen%an%Creset %s";
-    in ''log --pretty=format:"${format}"'';
-
     diff-so-fancy.enable = true;
     # difftastic.enable = true;
 
@@ -50,7 +46,6 @@
   };
 
   programs.zsh.shellAliases = lib.mkAfter {
-    "t" = "lazygit";
     "g" = "git";
     "gs" = "git status";
     "ga" = "git add -A";
