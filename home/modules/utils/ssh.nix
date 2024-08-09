@@ -27,7 +27,7 @@ let
     { name = "unifi"; hostname = "52.143.13.146"; user = "neo"; identityFile = "~/.ssh/id_rsa"; }
     { name = "pi-desk"; hostname = "20.0.0.30"; user = "pi"; }
     { name = "truenas"; hostname = "10.0.0.6"; user = "root"; }
-    { name = "nt"; hostname = "10.0.1.254"; user = "rafaribe"; }
+    { name = "nt"; hostname = "10.0.0.254"; user = "rafaribe"; }
     { name = "pve"; hostname = "10.0.0.2"; user = "root"; }
     { name = "amaterasu"; hostname = "192.168.1.2"; user = "rafaribe"; }
   ];
